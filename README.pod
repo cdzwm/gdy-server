@@ -5,8 +5,6 @@
 
 A poker game server for Gan Deng Yan(gdy).
 
- var http=require('http');
-
 =head1 Dependcies
 
 =over
