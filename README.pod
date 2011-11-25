@@ -47,7 +47,5 @@ canw, eggcaker
 
 =back
 
-I<This a italic text.>
-L</Introduction>
-F<test.c>
+S<This is a $s.te sdf>
 
