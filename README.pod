@@ -1,4 +1,4 @@
-=over
+=pod
 
 This is a pod test.
 
