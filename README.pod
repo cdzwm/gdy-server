@@ -1,3 +1,4 @@
+
 =encoding utf8
 
 =head1 Introduction
@@ -33,19 +34,11 @@ A poker game server for Gan Deng Yan(gdy).
 
 =head1 Licence
 
-=over
-
 MIT license 
-
-=back
 
 =head1 Authors
 
-=over
+canw(nodejs@live.cn), eggcaker(eggcaker@gmail.com)
 
-canw, eggcaker
 
-=back
-
-S<This is a $s.te sdf>
 
