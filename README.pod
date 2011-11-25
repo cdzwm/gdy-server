@@ -3,15 +3,15 @@
 
 =head1 Introduction
 
-A poker game server for Gan Deng Yan(gdy).
+A poker game server and client for Gan Deng Yan(gdy).
 
 =head1 Dependcies
 
 =over
 
-=item * Node.js(0.6.2)
+=item * node.js(0.6.2)
 
-=item * SQLite3
+=item * sqlite3
 
 =item * HTML5
 
@@ -37,6 +37,5 @@ MIT license
 =head1 Authors
 
 canw(nodejs@live.cn), eggcaker(eggcaker@gmail.com)
-
 
 
