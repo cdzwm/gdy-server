@@ -1,12 +1,3 @@
-=pod
-
-2011.11.24
-
-A pocker game server for Gan Deng Yan(gdy).
-
-###################
-Dependcies:
-=======
 
 =head1 A pocker game server for Gan Deng Yan(gdy).
 
