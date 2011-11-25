@@ -11,10 +11,12 @@ HTML5
 Prototype
 
 =over
+
 =item Node.js
 =item Sqlite3
 =item HTML5
 =item Prototype
+
 =back
 
 =over
@@ -25,8 +27,7 @@ Emacs
 2011.11.24
 
 =over
+
 =item Emacs
-=back
-=back
 
 
