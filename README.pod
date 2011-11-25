@@ -2,16 +2,16 @@
 
 =head2 Dependcies
 
-=over 2 
+=over
 =item Node.js
 =item Sqlite3
 =item HTML5
-=itemPrototype
+=item Prototype
 =back
 
 =head2 Development Tools 
 
-=over 2
+=over
 =item Emacs
 =back
 
