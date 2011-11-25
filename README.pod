@@ -7,7 +7,7 @@ A pocker game server for Gan Deng Yan(gdy).
 
 =over
 
-=item Node.js
+=item Node.js(0.6.2)
 
 An event-driven JavaScript System.
 
@@ -25,6 +25,15 @@ An event-driven JavaScript System.
 
 =item Emacs
 
+=item Git
+
+=item 
+
+
 =back
+
+=head1 Licence
+
+MIT license 
 
 
