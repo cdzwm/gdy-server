@@ -3,6 +3,9 @@
 
 A pocker game server for Gan Deng Yan(gdy).
 
+ var http=require('http');
+ 
+
 =head1 Dependcies:
 
 =over
@@ -18,12 +21,6 @@ An event-driven JavaScript System.
 =item * Prototype
 
 =back
-
-
-
-
-
-
 
 =head1 Development Tools
 
