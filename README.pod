@@ -46,3 +46,7 @@ MIT license
 canw, eggcaker
 
 =back
+
+I<This a italic text.>
+
+
