@@ -1,20 +1,4 @@
-=item stuff()
-
- This function does stuff.
-
-=cut
-
-  sub stuff {
-    ...
-  }
-
 =pod
-
-  Remember to check its return value, as in:
-
-    stuff() || die "Couldn't do stuff!";
-
-=cut
 
 2011.11.24
 
