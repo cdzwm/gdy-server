@@ -20,6 +20,11 @@ An event-driven JavaScript System.
 =back
 
 
+
+
+
+
+
 =head1 Development Tools
 
 =over
@@ -27,8 +32,6 @@ An event-driven JavaScript System.
 =item * Emacs
 
 =item * Git
-
-=item 
 
 =back
 
