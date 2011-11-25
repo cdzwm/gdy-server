@@ -36,4 +36,8 @@ An event-driven JavaScript System.
 
 MIT license 
 
+=head1 Authors
+
+canw, eggcaker
+
 
