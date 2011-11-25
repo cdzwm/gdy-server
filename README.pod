@@ -19,4 +19,12 @@ An event-driven JavaScript System.
 
 =back
 
+=head1 Development Tools
+
+=over
+
+=item Emacs
+
+=back
+
 
