@@ -1,32 +1,14 @@
-=item stuff()
 
- This function does stuff.
 
-=cut
+=head1 A pocker game server for Gan Deng Yan(gdy).
 
-  sub stuff {
-    ...
-  }
-
-=pod
-
-  Remember to check its return value, as in:
-
-    stuff() || die "Couldn't do stuff!";
-
-=cut
-
-2011.11.24
-
-A pocker game server for Gan Deng Yan(gdy).
-
-###################
-Dependcies:
+=item Dependcies
 Node.js
 Sqlite3
 HTML5
 Prototype
 
-Development Tools:
+=item Development Tools
 Emacs
-test
+
+2011.11.24
