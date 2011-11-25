@@ -1,5 +1,3 @@
-=pod
-
-This is a pod test.
+=head1 Gan Deng Yan
 
 
