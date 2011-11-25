@@ -11,11 +11,17 @@ A pocker game server for Gan Deng Yan(gdy).
 
 An event-driven JavaScript System.
 
-=item Sqlite3
+=item *
 
-=item HTML5
+Sqlite3
 
-=item Prototype
+=item *
+
+HTML5
+
+=item *
+
+Prototype
 
 =back
 
