@@ -9,13 +9,13 @@ A poker game server for Gan Deng Yan(gdy).
 
 =over
 
-=item 1. Node.js(0.6.2)
+=item 1 Node.js(0.6.2)
 
-=item 1. SQLite3
+=item 1 SQLite3
 
-=item 1. HTML5
+=item 1 HTML5
 
-=item 1. Prototype
+=item 1 Prototype
 
 =back
 
