@@ -2,7 +2,7 @@
 
 =head2 Dependcies
 
-=over indentlevel
+=over 2 
 =item Node.js
 =item Sqlite3
 =item HTML5
@@ -11,7 +11,7 @@
 
 =head2 Development Tools 
 
-=over indentlevel
+=over 2
 =item Emacs
 =back
 
