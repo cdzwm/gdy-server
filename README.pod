@@ -5,8 +5,12 @@
 
 =item Emacs
 
+Test
+
+=cut
+
 =back
 
-Ordinary Paragraph
+=Ordinary Paragraph
 
 
