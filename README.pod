@@ -1,24 +1,21 @@
 
 =head1 Intruction
 
-A pocker game server for Gan Deng Yan(gdy).
+A poker game server for Gan Deng Yan(gdy).
 
  var http=require('http');
- 
 
-=head1 Dependcies:
+=head1 Dependcies
 
 =over
 
-=item * Node.js(0.6.2)
+=item 1. Node.js(0.6.2)
 
-An event-driven JavaScript System.
+=item 1. SQLite3
 
-=item * SQLite3
+=item 1. HTML5
 
-=item * HTML5
-
-=item * Prototype
+=item 1. Prototype
 
 =back
 
