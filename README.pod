@@ -1,16 +1,12 @@
 
 =head1 Gan Deng Yan
 
-=over
-
 =item Emacs
 
 Test
 
 =cut
 
-=back
-
-=Ordinary Paragraph
+Ordinary Paragraph
 
 
