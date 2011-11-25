@@ -1,6 +1,7 @@
-
 =head1 Intruction
+
 A pocker game server for Gan Deng Yan(gdy).
+
 =head1 Dependcies:
 
 =over
