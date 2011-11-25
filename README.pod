@@ -19,25 +19,33 @@ An event-driven JavaScript System.
 
 =back
 
+
 =head1 Development Tools
 
 =over
 
-=item Emacs
+=item * Emacs
 
-=item Git
+=item * Git
 
 =item 
 
-
 =back
+
 
 =head1 Licence
 
+=over
+
 MIT license 
+
+=back
 
 =head1 Authors
 
+=over
+
 canw, eggcaker
 
+=back
 
