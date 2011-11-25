@@ -1,3 +1,4 @@
+
 =head1 Intruction
 
 A pocker game server for Gan Deng Yan(gdy).
@@ -7,6 +8,7 @@ A pocker game server for Gan Deng Yan(gdy).
 =over
 
 =item Node.js(0.6.2)
+
 An event-driven JavaScript System.
 
 =item Sqlite3
