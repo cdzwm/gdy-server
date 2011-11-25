@@ -5,6 +5,7 @@
 
 =item Emacs
 
+=back
 
 Ordinary Paragraph
 
