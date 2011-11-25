@@ -1,3 +1,4 @@
+=encoding utf8
 
 =head1 Intruction
 
@@ -46,7 +47,5 @@ canw, eggcaker
 
 =back
 
-
-This is a test.
 
 
