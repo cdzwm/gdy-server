@@ -1,4 +1,4 @@
-=encoding utf8
+=ENCOding utf8
 
 =head1 Intruction
 
@@ -46,6 +46,3 @@ MIT license
 canw, eggcaker
 
 =back
-
-
-
