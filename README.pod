@@ -7,21 +7,15 @@ A pocker game server for Gan Deng Yan(gdy).
 
 =over
 
-=item Node.js(0.6.2)
+=item * Node.js(0.6.2)
 
 An event-driven JavaScript System.
 
-=item *
+=item * SQLite3
 
-Sqlite3
+=item * HTML5
 
-=item *
-
-HTML5
-
-=item *
-
-Prototype
+=item * Prototype
 
 =back
 
