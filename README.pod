@@ -1,6 +1,8 @@
 
 =head1 A pocker game server for Gan Deng Yan(gdy).
 
+=over
+
 =item Dependcies
 
 Node.js
@@ -14,6 +16,8 @@ Prototype
 =item HTML5
 =item Prototype
 =back
+
+=over
 
 =item Development Tools
 Emacs
