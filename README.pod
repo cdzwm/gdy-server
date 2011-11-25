@@ -1,16 +1,20 @@
 
-=head1 Gan Deng Yan
+=head1 Intruction
+
+A pocker game server for Gan Deng Yan(gdy).
+
+=head1 Dependcies:
 
 =over
 
-=item Emacs
+=item Node.js
 
-Test
+=item Sqlite3
 
-=cut
+=item HTML5
+
+=item Prototype
 
 =back
-
-Ordinary Paragraph
 
 
