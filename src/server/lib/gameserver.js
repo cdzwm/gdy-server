@@ -7,11 +7,11 @@ module.exports = new events.EventEmitter();
 var me = module.exports;
 var util = require('util');
 var net = require('net');
-var game = require('game');
-var gameZone = require('gamezone');
-var gameRoom = require('gameroom');
-var gameTable = require('gametable');
-var gameUser = require('gameuser');
+var game = require('../lib/game');
+var gameZone = require('../lib/gamezone');
+var gameRoom = require('../lib/gameroom');
+var gameTable = require('../lib/gametable');
+var gameUser = require('../lib/gameuser');
 var fs = require('fs');
 
 var server;
@@ -20,25 +20,24 @@ var server;
 */
 me.initServer = function() {
 
-	fs.readFile("serverconf.json", "utf8", function(err, data){
+	fs.readFile(process.cwd() + "\\serverconf.json", "utf8", function(err, data){
 			if(err) throw err;
 			var serverconf = JSON.parse(data);
 			me.version = serverconf.version;
+			me.name = serverconf.name;
 		}
 	);
 	
-	setTimeout(function(){
-			me.emit('start');
-	}, 500);
 }
 me.startServer = function (){
 	me.initServer();
 	server = net.createServer(function(s){
-		s.end('gdy server ' + me.version + '.');
+		s.end(me.name + ' server ' + me.version + '.');
 	});
-
 	server.listen(10086);
-
+	setTimeout(function(){
+			me.emit('start');
+	}, 500);
 }
 
 me.startServer();
