@@ -11,11 +11,7 @@ A poker game server and client for Gan Deng Yan(gdy).
 
 =item * node.js(0.6.3)
 
-=item * sqlite3
-
-=item * HTML5
-
-=item * Prototype
+=item * mysql
 
 =back
 
@@ -28,7 +24,6 @@ A poker game server and client for Gan Deng Yan(gdy).
 =item * Git
 
 =back
-
 
 =head1 Licence
 
