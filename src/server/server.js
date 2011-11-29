@@ -1,3 +1,6 @@
+/* server module file.
+
+*/
 var http = require('http');
 var host = '0.0.0.0';
 var port = 10086;

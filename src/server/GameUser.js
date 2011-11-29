@@ -1,0 +1,2 @@
+/* GameUser module file.
+*/
