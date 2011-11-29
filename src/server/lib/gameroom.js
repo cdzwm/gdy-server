@@ -1,2 +1,0 @@
-/* GameRoom module file.
-*/

@@ -1,2 +1,0 @@
-/* GameTable module file.
-*/
