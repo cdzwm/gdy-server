@@ -1,10 +1,10 @@
 /* main server.
 */
 
-var gameserver = require('./gameserver.js');
+var gameserver = require('gameserver');
 
 gameserver.on('start', function(){
-	console.log('server started');
+	console.log('server ' + require('version').version + ' started.');
 });
 
 gameserver.initServer();
