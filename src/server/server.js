@@ -4,7 +4,5 @@
 var gameserver = require('gameserver');
 
 gameserver.on('start', function(){
-	console.log('server ' + require('version').version + ' started.');
+	console.log('server ' + gameserver.version + ' started.');
 });
-
-gameserver.initServer();
