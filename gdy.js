@@ -1,6 +1,6 @@
 /* main server.
 */
-var gameserver = require('./lib/gameserver');
+var gameserver = require('./lib/server');
 
 gameserver.on('start', function(){
 	console.log('server ' + gameserver.serverconf.version + ' started.');
