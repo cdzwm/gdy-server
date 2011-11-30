@@ -1,5 +1,6 @@
 {
 "name": "Gan Deng Yan",
 "version": "0.0.1",
-"server_port": 10086
+"server_port": "10086",
+"description": "A poker game."
 }
