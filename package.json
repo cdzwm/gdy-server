@@ -7,6 +7,6 @@
   "author": "canw<nodejs@live.cn, eggcaker<eggcaker@gmail.com>",
   "dependencies": {
   },
- "main": "server",
+ "main": "./server.js",
   "engines": { "node": ">= 0.6.0" }
   }
