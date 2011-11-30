@@ -1,7 +1,12 @@
 {
   "name": "gdy-server",
   "version": "0.0.1",
+  "description": "Gan Deng Yan game server.",
+  "keywords": ["game", "server"],
+  "respository": "git://github.com/cdzwm/gdy.git",
+  "author": "canw<nodejs@live.cn, eggcaker<eggcaker@gmail.com>",
   "dependencies": {
-
+  },
+ "main": "index",
+  "engines": { "node": ">= 0.6.0" }
   }
-}
