@@ -5,6 +5,7 @@ var events = require('events');
 var util = require('util');
 var net = require('net');
 var fs = require('fs');
+var path = require('path');
 
 var game = require('../lib/game');
 var gameZone = require('../lib/gamezone');
@@ -15,12 +16,11 @@ var gameUser = require('../lib/gameuser');
 module.exports = new events.EventEmitter();
 var me = module.exports;
 
-
 /* Init server
 */
 var server;
 me.initServer = function() {
-	me.serverconf = JSON.parse(fs.readFileSync(process.cwd() + "\\serverconf.json", "utf8"));
+	me.serverconf = JSON.parse(fs.readFileSync(path.dirname(require.main.filename) + "/serverconf.json", "utf8"));
 }
 
 me.startServer = function (){
