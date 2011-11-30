@@ -1,9 +1,13 @@
 /* main server.
 */
-var gameserver = require('./lib/server');
+var gdy = require('./lib/server');
 
-gameserver.on('start', function(){
-	console.log('server ' + gameserver.serverconf.version + ' started.');
+gdy.on('start', function(){
+	console.log('server ' + gdy.serverconf.version + ' started.');
 });
 
-gameserver.startServer();
+gdy.startServer();
+
+setInterval(function(){
+	gdy.dumpPlayers();
+}, 5000);
