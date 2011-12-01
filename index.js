@@ -1,13 +1,12 @@
 /* main server.
 */
-var gdy = require('./lib/server');
+var server = require('./lib/server');
 
-gdy.on('start', function(){
-	console.log('server ' + gdy.serverconf.version + ' started.');
+server.on('start', function(){
+	console.log('server ' + server.serverconf.version + ' started.');
 });
 
-gdy.startServer();
-
-setInterval(function(){
-	gdy.dumpPlayers();
-}, 5000);
+server.on('newplayer', function(player){
+	console.log(player);
+});
+server.startServer();
