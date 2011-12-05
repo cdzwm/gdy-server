@@ -35,7 +35,4 @@ MIT license
 
 =head1 Authors
 
-canw(nodejs@live.cn), eggcaker(eggcaker@gmail.com), wh
-
-
-
+canw(nodejs@live.cn), eggcaker(eggcaker@gmail.com)
