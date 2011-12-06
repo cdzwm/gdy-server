@@ -1,26 +1,15 @@
 var net = require('net');
 
-var hello = {"cmd": "HELLO"};
-var client;
+var msg_begin = "GDY_MSG_BEGIN{";
+var msg_end="}GDY_MSG_END";
 
-try{
-	client = net.connect(10086, '127.0.0.1', function(){
-	client.write(JSON.stringify(hello));
+var hello = {"cmd": "HELLO"};
+
+var client = net.connect(10086, '127.0.0.1', function(){
 	setInterval(helloAgain, 2000);
 });
 
-}
-catch(e){
-	console.log(e.errno);
+function helloAgain(){
+	client.write(msg_begin + JSON.stringify(hello) + msg_end);
 }
 
-function helloAgain(){
-	try
-	{
-		client.write(JSON.stringify(hello));
-	}
-	catch (e)
-	{
-		console.log(e);
-	}
-}
