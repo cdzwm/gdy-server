@@ -13,7 +13,7 @@ $ node index.js
 
 =over
 
-=item * node.js(0.6.3)
+=item * node.js(>=0.6.0)
 
 =item * mysql
 
