@@ -18,7 +18,7 @@ function helloAgain1(){
 }
 
 function helloAgain2(){
-	for(var i=0;i<3;i++){
+	for(var i=0;i<1000;i++){
 		hello2.id = i;
 		client.write(msg_begin + JSON.stringify(hello2) + msg_end);
 	}
