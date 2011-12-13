@@ -8,14 +8,14 @@ var hello2 = {"cmd": "HELLO", "description":"handshake", "test":"a test"};
 
 
 var client = net.connect(10086, '127.0.0.1', function(){
-	//setTimeout(helloAgain1, 1000);
-	setInterval(helloAgain2, 100);
+	setInterval(helloAgain1, 1000);
+	//setInterval(helloAgain2, 100);
 	client.setEncoding('utf8');
 	client.on('data', onReceiveMessage);
 });
 
 function helloAgain1(){
-	hello1.cmd =  "HELLO" + Math.round((1000*Math.random())).toString();
+	hello1.cmd =  "HELLO";
 	client.write(msg_begin + JSON.stringify(hello1) + msg_end);
 }
 
