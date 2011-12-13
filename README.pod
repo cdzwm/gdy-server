@@ -29,6 +29,8 @@ $ node index.js
 
 =item * EditPlus
 
+= Cygwin
+
 =back
 
 =head1 Licence
