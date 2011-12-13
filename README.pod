@@ -29,7 +29,7 @@ $ node index.js
 
 =item * EditPlus
 
-= Cygwin
+=item * Cygwin
 
 =back
 
