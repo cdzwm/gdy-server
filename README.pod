@@ -29,9 +29,7 @@ $ node t_hello.js
 
 =item * Git
 
-=item * EditPlus1
-
-=item * Cygwin2
+=item * EditPlus
 
 =back
 
