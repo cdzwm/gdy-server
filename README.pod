@@ -31,7 +31,7 @@ $ node t_hello.js
 
 =item * EditPlus1
 
-=item * Cygwin
+=item * Cygwin2
 
 =back
 
