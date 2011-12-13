@@ -27,6 +27,8 @@ $ node index.js
 
 =item * Git
 
+=item * EditPlus
+
 =back
 
 =head1 Licence
