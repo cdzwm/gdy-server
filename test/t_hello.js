@@ -6,11 +6,10 @@ var msg_end="}GDY_MSG_END";
 var hello1 = {"cmd": "HELLO{*}", "description":"handshake"};
 var hello2 = {"cmd": "HELLO", "description":"handshake", "test":"a test"};
 
-
-var client = net.connect(10086, '127.0.0.1', function(){
-	//setTimeout(helloAgain1, 1000);
-	var t = setInterval(helloAgain1, 1000);
-	//setInterval(helloAgain2, 3000);
+var t
+	,client = net.connect(10086, '127.0.0.1', function(){
+	hello();
+	t = setTimeout(sendMessage, 1000);
 	client.setEncoding('utf8');
 	client.on("close", function(){
 		clearTimeout(t);
@@ -19,19 +18,20 @@ var client = net.connect(10086, '127.0.0.1', function(){
 	client.on('data', onReceiveMessage);
 });
 
-function helloAgain1(){
+client.on("error", function(err){
+	if( err.code == "ECONNREFUSED")
+		console.log("无法连接服务器");
+});
+function hello(){
 	hello1.cmd =  "HELLO";
 	client.write(msg_begin + JSON.stringify(hello1) + msg_end);
 }
-
-function helloAgain2(){
-	for(var i=0;i<1;i++){
-		hello2.cmd =  "HELLO" + Math.round((1000*Math.random())).toString();
-		hello2.id = i;
-		client.write(msg_begin + JSON.stringify(hello2) + msg_end);
-	}
-}
-
 function onReceiveMessage(data){
 	console.log(data);
+}
+
+function sendMessage(){
+	hello1.cmd =  "MSG";
+	client.write(msg_begin + JSON.stringify(hello1) + msg_end);
+	t = setTimeout(sendMessage, Math.round(Math.random() * 5000));
 }
