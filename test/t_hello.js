@@ -7,6 +7,8 @@ var hello_msg = {"cmd": "MSG"};
 
 var t
 	,client = net.connect(10086, '127.0.0.1', function(){
+	client.pause();
+	client.resume();
 	hello();
 	t = setTimeout(sendMessage, 1000);
 	client.setEncoding('utf8');
