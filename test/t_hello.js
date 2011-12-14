@@ -3,8 +3,7 @@ var net = require('net');
 var msg_begin = "GDY_MSG_BEGIN{";
 var msg_end="}GDY_MSG_END";
 
-var hello1 = {"cmd": "HELLO{*}", "description":"handshake"};
-var hello2 = {"cmd": "HELLO", "description":"handshake", "test":"a test"};
+var hello_msg = {"cmd": "MSG"};
 
 var t
 	,client = net.connect(10086, '127.0.0.1', function(){
@@ -23,15 +22,17 @@ client.on("error", function(err){
 		console.log("无法连接服务器");
 });
 function hello(){
-	hello1.cmd =  "HELLO";
-	client.write(msg_begin + JSON.stringify(hello1) + msg_end);
+	hello_msg.cmd =  "HELLO";
+	client.write(msg_begin + JSON.stringify(hello_msg) + msg_end);
 }
 function onReceiveMessage(data){
 	console.log(data);
 }
 
 function sendMessage(){
-	hello1.cmd =  "MSG";
-	client.write(msg_begin + JSON.stringify(hello1) + msg_end);
+	hello_msg.cmd =  "MSG";
+	var s = msg_begin + JSON.stringify(hello_msg) + msg_end;
+	console.log(s);
+	client.write(s);
 	t = setTimeout(sendMessage, Math.round(Math.random() * 5000));
 }
