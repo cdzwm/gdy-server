@@ -8,9 +8,14 @@ var hello2 = {"cmd": "HELLO", "description":"handshake", "test":"a test"};
 
 
 var client = net.connect(10086, '127.0.0.1', function(){
-	setInterval(helloAgain1, 1000);
-	//setInterval(helloAgain2, 100);
+	//setTimeout(helloAgain1, 1000);
+	var t = setInterval(helloAgain1, 1000);
+	//setInterval(helloAgain2, 3000);
 	client.setEncoding('utf8');
+	client.on("close", function(){
+		clearTimeout(t);
+		console.log("exit");
+	});
 	client.on('data', onReceiveMessage);
 });
 
