@@ -28,7 +28,9 @@ function hello(){
 	client.write(msg_begin + JSON.stringify(hello_msg) + msg_end);
 }
 function onReceiveMessage(data){
+	hello_msg.cmd =  "LOGIN";
 	console.log(data);
+	client.write(msg_begin + JSON.stringify(hello_msg) + msg_end);
 }
 
 function sendMessage(){
