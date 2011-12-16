@@ -1,7 +1,6 @@
-/* 
-module name: index
-description: define server entry point.
-*/
+//module name: index
+//description: define server entry point.
+
 var server = require('./lib/server');
 
 server.on('ready', function(){
