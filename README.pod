@@ -10,7 +10,9 @@ A poker game server and client for Gan Deng Yan(gdy).
 =over
 
 C<$ node index.js>
+
 C<$ cd test>
+
 C<$ node t_hello.js>
 
 =back
