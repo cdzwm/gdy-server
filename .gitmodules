@@ -1,3 +1,5 @@
-[submodule "deps/gdy-comm"]
-	path = deps/gdy-comm
-	url = https://cdzwm@github.com/cdzwm/gdy-comm.git
+[submodule "deps/comm"]
+path = deps/comm
+
+url = https://cdzwm@github.com/cdzwm/gdy-comm.git
+
