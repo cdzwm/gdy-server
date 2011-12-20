@@ -3,3 +3,6 @@ path = deps/comm
 
 url = https://cdzwm@github.com/cdzwm/gdy-comm.git
 
+[submodule "lib/comm"]
+	path = lib/comm
+	url = https://cdzwm@github.com/cdzwm/gdy-comm.git
