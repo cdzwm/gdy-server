@@ -6,6 +6,7 @@
   "respository": "git://github.com/cdzwm/gdy.git",
   "author": "canw<nodejs@live.cn, eggcaker<eggcaker@gmail.com>",
   "dependencies": {
+  "mysql":"0.9.5"
   },
  "main": "./server.js",
   "engines": { "node": ">= 0.6.0" }
