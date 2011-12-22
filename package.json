@@ -7,7 +7,7 @@
   "author": "canw<nodejs@live.cn, eggcaker<eggcaker@gmail.com>",
   "dependencies": {
   "mysql":"0.9.5",
-  "redis": "2.4.4"
+  "redis": "0.7.1"
   },
  "main": "./server.js",
   "engines": { "node": ">= 0.6.0" }
