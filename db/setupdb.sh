@@ -31,6 +31,6 @@ grant all on *.* to gdy@127.0.0.1;
 
 -- insert into player data
 insert into player values(
-1, 'player1', 'player1', '', 'password', 'M', 1000, null, null, 1, 1, 0
+1, 'player1', 'player1', '', 'password', 'M', 1000, sysdate(), sysdate(), 1, 1, 0
 );
 END
