@@ -1,6 +1,4 @@
 mysql -uroot -p <<END
-if exists(select * from mysql.user where user='gdy')
-drop user gdy
 
 -- create database gdy
 drop database if exists gdy;
@@ -15,6 +13,7 @@ create table player(
 	name text, 
 	nickname text,
 	description text,
+	password text,
 	sex text,
 	money int,
 	lastLoginTime datetime,
@@ -25,6 +24,13 @@ create table player(
 );
 create unique index idx_id_on_player on player(id);
 
--- create user gdy;
-create user gdy identified by "gdypwd1!";
+-- grant
+grant all on *.* to gdy@localhost IDENTIFIED BY 'gdypwd';
+grant all on *.* to gdy@133.109.24.252;
+grant all on *.* to gdy@127.0.0.1;
+
+-- insert into player data
+insert into player values(
+1, 'player1', 'player1', '', 'password', 'M', 1000, null, null, 1, 1, 0
+);
 END
