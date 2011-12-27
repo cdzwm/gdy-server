@@ -2,5 +2,9 @@
 "name": "Gan Deng Yan",
 "version": "0.0.1",
 "server_port": "10086",
-"description": "A poker game."
+"description": "A poker game.",
+"db_server" : "133.109.55.198",
+"db_user" : "gdy",
+"db_password" : "gdypwd"
+"db_name" : "gdy",
 }
