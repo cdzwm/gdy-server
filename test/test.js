@@ -1,4 +1,4 @@
-var poker = require("./lib/poker");
+var poker = require("../lib/poker");
 var test_cases = [
 // 单牌测试
 [
