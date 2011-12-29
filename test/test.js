@@ -1,6 +1,4 @@
 var poker = require("../lib/poker");
-console.log(Object.prototype.hasOwnProperty('cloneObject'));
-
 var test_cases = [
 [
 ],
@@ -67,7 +65,7 @@ var card;
 for( card in thecards )
 	mycards.push(thecards[card]);
 
-for (var i = 0; i<1; i++){
+for (var i = 0; i<1000; i++){
 	var result = poker.shuffle(mycards);
 	var cards = [];
 	var pos = Math.floor(Math.random() * result.length);
@@ -79,17 +77,17 @@ for (var i = 0; i<1; i++){
 	pos = Math.floor(Math.random() * result.length);
 	cards.push(result[pos]);
 
-//	pos = Math.floor(Math.random() * result.length);
-//	cards.push(result[pos]);
+	pos = Math.floor(Math.random() * result.length);
+	cards.push(result[pos]);
 
 	var suits = poker.getSuits(cards);
 	if( suits.length > 0 ){
-//		console.log("---------OK---------");
-//		console.log(cards);
-//		console.log("****************");
-//		for( var suit in suits ){
-//			console.log(suits[suit]);
-//		}
+		console.log("---------OK---------");
+		console.log(cards);
+		console.log("****************");
+		for( var suit in suits ){
+			console.log(suits[suit]);
+		}
 	}
 	else{
 		if( poker.getKingCount(cards) > 0){
