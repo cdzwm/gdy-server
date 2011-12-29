@@ -6,5 +6,37 @@
 "db_server" : "133.109.55.198",
 "db_user" : "gdy",
 "db_password" : "gdypwd",
-"db_name" : "gdy"
+"db_name" : "gdy",
+"rooms" : [
+{
+"name" : "room 1",
+"tables" : [
+	{
+		"name" : "table 1",
+		"min_person" : 2,
+		"max_person" : 5
+	},
+	{
+		"name" : "table 2",
+		"min_person" : 2,
+		"max_person" : 5
+	}
+	]
+},
+{
+"name" : "room 2",
+"tables" : [
+	{
+		"name" : "table 1",
+		"min_person" : 2,
+		"max_person" : 5
+	},
+	{
+		"name" : "table 2",
+		"min_person" : 2,
+		"max_person" : 5
+	}
+	]
+}
+]
 }
