@@ -1,51 +1,28 @@
-var mysql = require('mysql');
-var TEST_DATABASE = 'nodejs_mysql_test';
-var TEST_TABLE = 'test';
-var client = mysql.createClient({
-  user: 'root',
-  password: 'root',
-});
-
-client.query('CREATE DATABASE '+TEST_DATABASE, function(err) {
-  if (err && err.number != mysql.ERROR_DB_CREATE_EXISTS) {
-    throw err;
-  }
-});
-
-// If no callback is provided, any errors will be emitted as `'error'`
-// events by the client
-client.query('USE '+TEST_DATABASE);
-
-client.query(
-  'CREATE TEMPORARY TABLE '+TEST_TABLE+
-  '(id INT(11) AUTO_INCREMENT, '+
-  'title VARCHAR(255), '+
-  'text TEXT, '+
-  'created DATETIME, '+
-  'PRIMARY KEY (id))'
-);
-
-client.query(
-  'INSERT INTO '+TEST_TABLE+' '+
-  'SET title = ?, text = ?, created = ?',
-  ['super cool', 'this is a nice text', '2010-08-16 10:00:23']
-);
-
-var query = client.query(
-  'INSERT INTO '+TEST_TABLE+' '+
-  'SET title = ?, text = ?, created = ?',
-  ['another entry', 'because 2 entries make a better test', '2010-08-16 12:42:15']
-);
-
-client.query(
-  'SELECT * FROM '+TEST_TABLE,
-  function selectCb(err, results, fields) {
-    if (err) {
-      throw err;
-    }
-
-    console.log(results);
-    console.log(fields);
-    client.end();
-  }
-);
+global.DEBUG = (process.env["GDY_DEBUG"] == 1);
+global.DBG_LOG = function(arg1, arg2){
+	if( DEBUG ){
+		var tag_message = "", tag_name="GDY - ", message="";
+		if( arguments.length == 2 ){
+			switch(arg1){
+				case "i":
+					tag_message = "Info: ";
+					break;
+				case "d":
+					tag_message = "Debug: ";
+					break;
+				case "e":
+					tag_message = "Error: ";
+					break;
+				default:
+					tag_name="";
+					message = arg1;
+					break;
+			}
+			message += tag_name + tag_message  + arg2;
+		}
+		else{
+			message = arg1;
+		}
+		console.log(message);
+	}
+}
