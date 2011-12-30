@@ -7,7 +7,7 @@
 "db_user" : "gdy",
 "db_password" : "gdypwd",
 "db_name" : "gdy",
-"maxConections" : "100",
+"maxConections" : "1024",
 "rooms" : [
 {
 "name" : "room 1",

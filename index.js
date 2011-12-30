@@ -10,7 +10,7 @@ var server = require('./lib/server');
 
 // ready event
 server.on('ready', function(){
-	console.log('GDY server ' + serverconf.version + ' started.');
+	DBG_LOG('GDY server ' + serverconf.version + ' started.');
 });
 
 // start server
