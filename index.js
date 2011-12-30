@@ -1,11 +1,16 @@
 //module name: index
-//description: define server entry point.
+//description: server entry point.
 
+global.DEBUG = (process.env.GDY_DEBUG || false) == 1;
+global.DBG_LOG = function(msg){
+	if( DEBUG )
+		console.log(msg);
+}
 var server = require('./lib/server');
 
-// catch ready event
+// ready event
 server.on('ready', function(){
-	console.log('server ' + global.serverconf.version + ' started.');
+	console.log('GDY server ' + serverconf.version + ' started.');
 });
 
 // start server
