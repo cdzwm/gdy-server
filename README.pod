@@ -3,7 +3,7 @@
 
 =head1 Introduction
 
-A poker game server and client for Gan Deng Yan(gdy).
+A poker game server and a cli client for Gan Deng Yan(gdy).
 
 =head2 Running the server
 
@@ -24,6 +24,8 @@ C<$ node t_hello.js>
 =item * node.js(>=0.6.0)
 
 =item * mysql
+
+=item * Redis
 
 =back
 
