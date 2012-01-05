@@ -1,15 +1,12 @@
 //module name: index
 //description: server entry point.
-
-require("./lib/comm/debug");
-require("./lib/comm/util");
-var server = require('./lib/server');
-require("./lib/poker").getCards();
-
+var debug = require("./lib/comm/debug")
+	,myutil = require("./lib/comm/util")
+	,server = require('./lib/server');
 
 // ready event
 server.on('ready', function(){
-	DBG_LOG("i", 'GDY server ' + serverconf.version + ' started.');
+	DBG_LOG("i", 'GDY server ' + _server.serverconf.version + ' started.');
 });
 
 // start server
