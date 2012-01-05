@@ -10,7 +10,7 @@
 "maxConections" : "1024",
 "rooms" : [
 {
-"name" : "room 1",
+"name" : "gdy room 1",
 "tables" : [
 	{
 		"name" : "table 1",
@@ -25,7 +25,7 @@
 	]
 },
 {
-"name" : "room 2",
+"name" : "gdy room 2",
 "tables" : [
 	{
 		"name" : "table 1",
