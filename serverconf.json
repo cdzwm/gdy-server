@@ -11,8 +11,11 @@
 "rooms" : [
 {
 "name" : "gdy room 1",
+"id" : 1,
+
 "tables" : [
 	{
+		"id" : 1,
 		"name" : "table 1",
 		"min_person" : 2,
 		"max_person" : 5
@@ -26,6 +29,27 @@
 },
 {
 "name" : "gdy room 2",
+"id" : 2,
+
+"tables" : [
+	{
+		"id" : 2,
+		"name" : "table 1",
+		"min_person" : 2,
+		"max_person" : 5
+	},
+	{
+		"name" : "table 2",
+		"min_person" : 2,
+		"max_person" : 5
+	}
+	]
+}
+,
+{
+"name" : "gdy room 3",
+"id" : 3,
+
 "tables" : [
 	{
 		"name" : "table 1",
