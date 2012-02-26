@@ -6,7 +6,7 @@ var debug = require("./lib/comm/debug")
 
 // ready event
 server.on('ready', function(){
-	DBG_LOG("i", 'GDY server ' + _server.serverconf.version + ' started.');
+	DBG_LOG("i", 'GDY server ' + server.serverconf.version + ' started.');
 });
 
 // start server
