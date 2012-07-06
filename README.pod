@@ -1,4 +1,3 @@
-
 =encoding utf8
 
 =head1 Introduction
@@ -47,4 +46,4 @@ MIT license
 
 =head1 Authors
 
-canw(nodejs@live.cn), eggcaker(eggcaker@gmail.com)
+canw(nodejs@live.cn)
