@@ -46,4 +46,6 @@ MIT license
 
 =head1 Authors
 
+=headq use ssh
+
 canw(nodejs@live.cn)
