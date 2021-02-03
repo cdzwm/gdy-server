@@ -1,0 +1,21 @@
+{
+    "name":"奇安信管理助手",
+    "version":"1.0",
+    "description":"奇安信全管理助手",
+    "manifest_version": 3,
+    "background":{
+        "service_worker":"background.js",
+        "persistend":false
+    },
+    "action":{
+        "default_title":"奇安信助手"
+    },
+    "icons":{
+        "128":"logo.png"
+    },
+    "options_page":"options.html",
+    "devtools_page":"devtools.html",
+    "content_scripts":[{"matches": ["*://*/*"],"js":["asset.js"]}],
+    "permissions":["tabs", "scripting", "debugger", "storage"  ],
+    "host_permissions":["*://*/*"]
+}
