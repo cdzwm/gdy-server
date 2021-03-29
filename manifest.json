@@ -1,21 +1,54 @@
 {
-    "name":"奇安信管理助手",
-    "version":"1.0",
-    "description":"奇安信全管理助手",
+    "name": "奇安信助手",
+    "version": "0.1",
+    "description": "奇安信理助手",
     "manifest_version": 3,
-    "background":{
-        "service_worker":"background.js",
-        "persistend":false
+
+    "background": {
+        "service_worker": "/background.js"
     },
-    "action":{
-        "default_title":"奇安信助手"
+
+    "action": {
+        "default_title": "奇安信助手",
+        "matches":["http://10.48.53.85:8080/*", "https://10.48.53.85:8443/*"]
     },
-    "icons":{
-        "128":"logo.png"
+
+    "icons": {
+        "128": "/images/logo.png"
     },
-    "options_page":"options.html",
-    "devtools_page":"devtools.html",
-    "content_scripts":[{"matches": ["*://*/*"],"js":["asset.js"]}],
-    "permissions":["tabs", "scripting", "debugger", "storage"  ],
-    "host_permissions":["*://*/*"]
+
+    "devtools_page": "devtools.html",
+    "options_page": "options.html",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://10.48.53.85:8443/security/index/index*",
+                "https://10.48.53.85:8443/host/pcsummary/index"
+            ],
+            "js": [
+                "js/jquery-3.5.1.min.js",
+                "js/util.js",
+                "js/asset.js"
+            ],
+            "match_about_blank": true
+        }
+    ],
+
+    "web_accessible_resources":[{
+        "resources": [ "/js/helper.js" ],
+        "matches":["https://10.48.53.85:8443/*"]
+    }],
+
+    "permissions": [
+        "tabs",
+        "scripting",
+        "alarms",
+        "storage",
+        "unlimitedStorage"
+    ],
+
+    "host_permissions": [
+        "https://10.48.53.85:8443/*",
+        "http://127.0.0.1:3000/*"
+    ]
 }

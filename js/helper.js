@@ -1,0 +1,1 @@
+window.postMessage({type: "init", SYS_CONF})

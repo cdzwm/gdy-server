@@ -1,1 +1,0 @@
-chrome.devtools.panels.create("QAXHelper", null, "qax.html", null)
