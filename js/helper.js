@@ -1,1 +1,1 @@
-window.postMessage({type: "init", SYS_CONF})
+window.postMessage({type: "init_data", SYS_CONF})

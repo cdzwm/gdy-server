@@ -171,6 +171,6 @@ script.src = chrome.runtime.getURL("./js/helper.js");
 
 window.addEventListener("message", msg => {
     if (msg.data.type && msg.data.type == "init_data") {
-        chrome.runtime.sendMessage({SYS_CONF: msg.data.SYS_CONF})
+        chrome.runtime.sendMessage({type: "init_data", SYS_CONF: msg.data.SYS_CONF})
     }
 })

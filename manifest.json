@@ -10,14 +10,16 @@
 
     "action": {
         "default_title": "奇安信助手",
-        "matches":["http://10.48.53.85:8080/*", "https://10.48.53.85:8443/*"]
+        "default_popup": "popup.html",
+        "matches": [
+            "https://10.48.53.85:8443/*"
+        ]
     },
 
     "icons": {
         "128": "/images/logo.png"
     },
 
-    "devtools_page": "devtools.html",
     "options_page": "options.html",
     "content_scripts": [
         {
@@ -48,7 +50,6 @@
     ],
 
     "host_permissions": [
-        "https://10.48.53.85:8443/*",
-        "http://127.0.0.1:3000/*"
+        "https://10.48.53.85:8443/*"
     ]
 }
